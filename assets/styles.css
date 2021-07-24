@@ -9,17 +9,49 @@ body, html {
     background: black;
 }
 
-.navbar {
-    background: rgb(3, 3, 3);
-    line-height: 10vh;
-    color: rgb(245, 246, 247);
+.hero-banner {
+    margin: 0px;
+    padding: 0px;
 }
 
-.banner {
-    height: auto;
-    width: 100vw;
-    margin-bottom: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    .banner {
+        height: auto;
+        width: 100vw;
+        margin-bottom: 0px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .navbar {
+        background: rgb(51, 51, 51);
+        line-height: 2vh;
+        color: rgb(245, 246, 247);
+        font-size: 10px;
+        text-align: center;
+        background-color: radial-gradient(black, rgb(83, 83, 83));
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.bio {
+    height:auto;
+    width: 25vw;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+
+    .bio img {
+        height: auto;
+        width: 25vw;
+        padding: 20px;
+    }
+
+.repo {
+    color: white;
 }
