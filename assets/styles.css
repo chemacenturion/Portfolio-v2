@@ -5,7 +5,6 @@
 }
 
 body, html {
-    height: 100%;
     background: black;
 }
 
@@ -44,14 +43,23 @@ body, html {
     width: 25vw;
     color: white;
     background-color: rgb(34, 34, 34);
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
     .bio img {
         height: auto;
-        width: 25vw;
+        width: 20vw;
         padding: 20px;
     }
 
 .repo {
     color: white;
+}
+
+.footer {
+    background-color: blueviolet;
+    height: 30px;
+    width: 100vw;
 }
