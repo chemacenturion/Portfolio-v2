@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background: black;
+}
+
+.navbar {
+    background: rgb(3, 3, 3);
+    line-height: 10vh;
+    color: rgb(245, 246, 247);
+}
+
+.banner {
+    height: auto;
+    width: 100vw;
+    margin-bottom: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
