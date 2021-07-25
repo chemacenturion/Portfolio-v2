@@ -42,16 +42,18 @@ body, html {
     height:auto;
     width: 25vw;
     color: white;
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(238, 237, 237);
     justify-content: center;
     text-align: center;
-    padding: 20px;
 }
 
-    .bio img {
-        height: auto;
-        width: 20vw;
-        padding: 20px;
+    .avatar {
+        vertical-align: middle;
+        width: auto;
+        height: 120%;
+        border-radius: 15%;
+        position: relative;
+        bottom: 170px;
     }
 
 .repo {
