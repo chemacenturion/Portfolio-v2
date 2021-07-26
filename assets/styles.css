@@ -49,11 +49,11 @@ body, html {
 
     .avatar {
         vertical-align: middle;
-        width: auto;
-        height: 120%;
+        width: 90%;
+        height: auto;
         border-radius: 15%;
         position: relative;
-        bottom: 170px;
+        bottom: 50%;
     }
 
 .repo {
@@ -64,4 +64,8 @@ body, html {
     background-color: blueviolet;
     height: 30px;
     width: 100vw;
+}
+
+.name::before {
+    content: "Jose";
 }
