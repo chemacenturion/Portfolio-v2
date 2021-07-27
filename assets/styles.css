@@ -10,8 +10,9 @@ body, html {
 
 .grid-container {
     display: grid;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 0.25fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
     "header header header"
     "bio repo repo"
@@ -47,11 +48,33 @@ body, html {
         margin-top: -30%;
     }
 
-    .card {
-        background-color: lightgray;
-        height: 25%;
+    .button-1,
+    .button-2,
+    .button-3,
+    .button-4 {
+        width: 40em;
+        height: 5em;
+        color: white;
         list-style: none;
+        background-image: url(./images/output-onlinepngtools1.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        border: none;
     }
+
+    .button-2 {
+        background-image: url(./images/output-onlinepngtools2.png);
+    }
+
+    .button-3 {
+        background-image: url(./images/output-onlinepngtools3.png);
+    }
+
+    .button-4 {
+        background-image: url(./images/output-onlinepngtools4.png);
+    }
+
 
 .grid-item-2 {
     color: white;
@@ -59,15 +82,17 @@ body, html {
 }
 
 .footer {
-    background-color: blueviolet;
+    background: linear-gradient( rgb(0, 0, 0), rgb(100, 100, 100));
     grid-area: footer;
     width: 100vw;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 990px) {
     .grid-container {
         display: grid;
+        height: 100vh;
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 3fr 1fr;
         grid-template-areas: 
         "header"
         "bio"
@@ -83,4 +108,19 @@ body, html {
         margin-top: -13%;
     }
 
+    .button {
+        width: 14em;
+        height:auto;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+
+    .button-1,
+    .button-2,
+    .button-3,
+    .button-4 {
+        height: 1em;
+        width: 20em;
+        margin-top: 4%;
+    }
 }
