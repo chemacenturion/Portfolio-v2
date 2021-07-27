@@ -44,8 +44,13 @@ body, html {
         width: 60%;
         height: auto;
         border-radius: 15%;
-        position: relative;
-        bottom: 40%;
+        margin-top: -25%;
+    }
+
+    .card {
+        background-color: lightgray;
+        height: 25%;
+        list-style: none;
     }
 
 .grid-item-2 {
@@ -75,8 +80,7 @@ body, html {
         width: 25%;
         height: auto;
         border-radius: 15%;
-        position: relative;
-        bottom: 45% !important;
+        margin-top: -13%;
     }
 
 }
