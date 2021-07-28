@@ -12,19 +12,84 @@
     <main>
         <div class="grid-container">
             <header class= "hero-banner">
-                    <img class= "banner" src= "./assets/images/Screenshot (95).png"></img>
+                    <img class= "banner" src= "./assets/images/Screenshot (95).png" alt="top banner with golf, piano, and comedy"></img>
             </header>
             <div class="grid-item-1" id="bio">
-                <img src="./assets/images/circle-cropped (3).png" alt="Avatar" class="avatar">
-                <div class="card">
+                <img src="./assets/images/circle-cropped (3).png" alt="Jose" class="avatar">
+                <div class="links">
                     <ul>
-                        <li><button class="button-1">Bio</button></li>
-                        <li><button class="button-2">Resume</button></li>
-                        <li><button class="button-3">WITB</button></li>
-                        <li><button class="button-4">GAP Write-Up</button></li>
+                        <li><button class="button-1" id="open1">Bio</button></li>
+                        <li><button class="button-2" id="open2">Resume</button></li>
+                        <li><button class="button-3" id="open3" >WITB</button></li>
+                        <li><button class="button-4" id="open4">GAP Write-Up</button></li>
                     </ul>
                 </div>
+                <div class="modal_container" id="bio-modal">
+                    <div class="modal">
+                        <img src="./assets/images/carlitojose.JPG" alt="Jose and Carlito" class="bio-pic" ALIGN="left">
+                        <h1>[ José María Centurión ]</h1>
+                        <br>
+                        <br>
+                        <div class="bio-box">
+                            <h2>Origin:</h2>
+                            <br>
+                            <span>Asunción, Paraguay</span>
+                            <br>
+                            <br>
+                            <h2>Bio:</h2>
+                            <br>
+                            <p>Hello, my name is José María (or as we abbreviate in español: Chema). I am currently a student enrolled in UPENN's Coding Bootcamp powered by Trilogy. I am enjoying the course even more than I anticipated. After growing up in Philadelphia and attending the High School for Creative and Performing Arts (with a concentration in visual arts) I found myself unable to express my graphic arts background within the workspace. I consider myself fortunate that this avenue has come along to allow myself a new opportunity to express my creativity. If you return to the home page you will find links to my resume, my current WITB (What's In The Bag), as well as a very nice write-up about me from The Golf Association of Philadelphia when I won the Francis C. Poore Caddie of The Year Award in 2013. I first attended The Golf Academy of Orlando in 2008 and would later put myself through college as both a caddie and a golf instructor. Upon graduation from Temple University I was primarily practicing manual sports therapy full time up until the pandemic. This pandemic has forced all of the world's population to make life changes both large and small. With that said, I am extremely excited and fortunate to embark upon this new career venture into web development. </p>
+                            <br>
+                            <br>
+                            <h2>Contact</h2>
+                            <br>
+                            <a href="mailto:webmaster@example.com">"centurion.philadelphia@gmail.com"</a>
+                        </div>
+                        <button class="button-1" id="close1">Return</button>
+                    </div>
+                </div>
+                <div class="modal_container" id="resume">
+                    <div class="modal">
+                        <h1>[ Resume ] <a href="https://docs.google.com/document/d/e/2PACX-1vQYTTvyOqyFH-DGLRJX5DoGXabBFZtAy0ggqFEjyK1B-40QrWbdy_EeSXSc9rzEzHqMUJ0-O1zauMVP/pub" target="_blank"> 🔗 </a></h1>
+                        <br>
+                        <br>
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQYTTvyOqyFH-DGLRJX5DoGXabBFZtAy0ggqFEjyK1B-40QrWbdy_EeSXSc9rzEzHqMUJ0-O1zauMVP/pub?embedded=true" class="resume-display"></iframe>
+                        <button class="button-2" id="close2">Return</button>
+                    </div>
+                </div>
+                <div class="modal_container" id="bag">
+                    <div class="modal">
+                        <img src="./assets/images/IMG_8580-removebg-preview.png" alt="golf clubs" class="witb-pic" ALIGN="left">
+                        <h1>[ What's In The Bag ]</h1>
+                        <br>
+                        <br>
+                        <div class="club-list">
+                            <ul>
+                                <li><span><strong>Driver:</strong></span> Cobra LTD Pro 6.3° w/ Fubuki K60 Shaft [46" - tipped 1"]</li>
+                                <li><span><strong>2 Wood:</strong></span> Taylormade 300 Mini Driver 11.5° w/ Fubuki K70 Shaft [43" - tipped 2"]</li>
+                                <li><span><strong>4 Wood:</strong></span> Cobra f6 Baffler 16.5° w/ Fujikura Motore Pro Spec VC8.2 [41.5" - tipped 2"]</li>
+                                <li><span><strong>3 Hybrid:</strong></span> Cobra RAD Speed One Length 19° w/ Steelfiber i95 S</li>
+                                <li><span><strong>Irons:</strong></span> Cobra KING Forged Tec One Length 5 iron 23° w/ Steelfiber i95 S</li>
+                                <li><span><strong>Irons:</strong></span> Sterling Single Length Irons [Gen 1] 6-PW w/ Steelfiber i95 S</li>
+                                <li><span><strong>Wedges:</strong></span> Cobra KING F8 One Length Gap 49° w/ Steelfiber i95 S</li>
+                                <li><span><strong>Wedges:</strong></span> Cobra KING Snake Bite One Length Wedges 56° & 60° w/ Steelfiber i95 S</li>
+                                <li><span><strong>Putter:</strong></span> InaZone Hefty Putter 500g w/ Two Thumb Grip</li>
+                            </ul>
+                        </div>  
+                        <button class="button-3" id="close3">Return</button>
+                    </div>
+                </div>
+                <div class="modal_container" id="writeUp">
+                    <div class="modal">
+                        <h1>[ GAP Write-UP ] <a href="https://www.gapgolfmag-digital.org/gapgolf/2014_spring?pg=24#pg24" target="_blank"> 🔗 </a></h1>
+                        <br>
+                        <br>
+                        <iframe src="https://www.gapgolfmag-digital.org/gapgolf/2014_spring?pg=24#pg24" class="resume-display"></iframe>
+                        <button class="button-4" id="close4">Return</button>
+                    </div>
+                </div>
             </div>
+
             <div class="grid-item-2" id="repo">
             </div>
             <footer class= "footer">
@@ -33,13 +98,14 @@
                 </div>
                 <div>
                     <ul class="footer-list">
-                        <li><a href="https://www.linkedin.com/in/jose-centurion-a98300212/" target="_blank"><img src="./assets/images/linkdinLOGO.png" alt="links" class="avatar2"></a></li>
-                        <li><a href="https://github.com/chemacenturion" target="_blank"><img src="./assets/images/GitHub-Mark.png" alt="Avatar" class="avatar2"></a></li>
+                        <li><a href="https://www.linkedin.com/in/jose-centurion-a98300212/" target="_blank"><img src="./assets/images/linkdinLOGO.png" alt="linkedin" class="avatar2"></a></li>
+                        <li><a href="https://github.com/chemacenturion" target="_blank"><img src="./assets/images/GitHub-Mark.png" alt="github" class="avatar2"></a></li>
                       </ul>
                 </div>
             </footer>
         </div>
     </main>
+<script src="assets/script.js"></script>
 </body>
 
 </html>

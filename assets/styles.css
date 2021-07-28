@@ -38,6 +38,7 @@ body, html {
     justify-content: center;
     text-align: center;
     grid-area: bio;
+    background-image: url();
 }
 
     .avatar {
@@ -75,6 +76,69 @@ body, html {
         background-image: url(./images/output-onlinepngtools4.png);
     }
 
+    .modal_container {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        transition: opacity 0.3s ease;
+    }
+
+    .modal {
+        background-color:rgb(238, 237, 237);
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 10);
+        padding: 30px 50px;
+        height: 85%;
+        width: 75%;
+        max-width: 100%;
+        text-align: center;
+        color: black;
+    }
+
+    .bio-pic {
+        height: auto;
+        width: 25%;
+        border-radius: 3px;
+        padding: 25px;
+        border-right: solid rgb(199, 199, 199) 1px;
+    }
+
+    #close1,
+    #close3 {
+        margin-top: 100px;
+    }
+
+    #close2 {
+        margin-top: 20px;
+    }
+    
+    .modal_container.show {
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    .resume-display {
+        width:75%;
+        height: 75%;
+    }
+
+    .witb-pic {
+        padding: 50px;
+        border-right: solid rgb(199, 199, 199) 1px;
+    }
+
+    .club-list ul {
+        list-style-type: none;
+        text-align: left;
+    }
 
 .grid-item-2 {
     color: white;
@@ -104,7 +168,7 @@ body, html {
         list-style: none;
     }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1100px) {
     .grid-container {
         display: grid;
         height: 100vh;
