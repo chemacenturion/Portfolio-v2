@@ -77,10 +77,12 @@ body, html {
     }
 
     .modal_container {
+        box-sizing: border-box;
         background-color: rgba(0, 0, 0, 0.3);
         position: fixed;
         opacity: 0;
-        display: flex;
+        display: grid;
+        grid-template-rows: auto;
         align-items: center;
         justify-content: center;
         pointer-events: none;
@@ -92,16 +94,32 @@ body, html {
         z-index: 99;
     }
 
-        .modal {
+        .modal__resume {
+            display: grid;
+            justify-content: center;
             background-color:rgb(238, 237, 237);
             border-radius: 5px;
             box-shadow: rgba(0, 0, 0, 10);
-            padding: 30px 50px;
-            height: 85%;
-            width: 75%;
-            max-width: 100%;
             text-align: center;
             color: black;
+        }
+
+        .modal__resume-header {
+            position: relative;
+        }
+
+        .modal__resume-image {
+            height: 75vh;
+            width: auto;
+        }
+
+        .modal__resume-button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            text-decoration: none;
+            font-size: x-large;
+            border: none;
         }
 
         .bio-pic {
@@ -112,24 +130,10 @@ body, html {
             padding: 25px;
             border-right: solid rgb(199, 199, 199) 1px;
         }
-
-        #close1,
-        #close3 {
-            margin-top: 100px;
-        }
-
-        #close2 {
-            margin-top: 20px;
-        }
         
         .modal_container.show {
             pointer-events: auto;
             opacity: 1;
-        }
-
-        .resume-display {
-            width:75%;
-            height: 75%;
         }
 
         .witb-pic {
