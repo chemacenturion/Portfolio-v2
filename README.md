@@ -1,7 +1,7 @@
 ## Portfolio Version 2.0
 
 ## Deployed Application Link
-# [GitHub Portfolio(v2)](https://chemacenturion.github.io/Portfolio-v2/)
+![GitHub Portfolio(v2)](https://chemacenturion.github.io/Portfolio-v2/)
 
 This is my up-to-date GitHub portfolio tracking my current progress through out the coding bootcamp.
 I'm proud to say that I've coded it all from scratch and used no frameworks. It is UI and mobile responsive.
