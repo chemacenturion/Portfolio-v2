@@ -94,6 +94,75 @@ body, html {
         z-index: 99;
     }
 
+        .modal__bio {
+            display: grid;
+            grid-template-columns: .2fr .1fr .5fr;
+            grid-template-rows: .2fr .2fr 2fr 1fr;
+            grid-template-areas: 
+            "a b b"
+            "a c d"
+            "a e f"
+            "a g h";
+            justify-content: center;
+            background-color:rgb(238, 237, 237);
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 10);
+            text-align: center;
+            color: black;
+            width: 80vw;
+        }
+
+            .modal__bio-image {
+                grid-area: a;
+                height: 70vh;
+                width: auto;
+                padding:1rem;
+            }
+
+            .modal__bio-header {
+                position: relative;
+                grid-area: b;
+            }
+
+            .modal__bio-name {
+                grid-area: b;
+                font-size: x-large;
+                padding: 2em;
+            }
+
+            .modal__bio-button {
+                position: absolute;
+                top: .5rem;
+                right: .5rem;
+                text-decoration: none;
+                font-size: x-large;
+                border: none;
+            }
+
+            .modal__bio-origin {
+                grid-area: c;
+            }
+
+            .modal__bio-country {
+                grid-area: d;
+            }
+
+            .modal__bio-bio {
+                grid-area: e;
+            }
+
+            .modal__bio-text {
+                grid-area: f;
+            }
+
+            .modal__bio-contact {
+                grid-area: g;
+            }
+
+            .modal__bio-link {
+                grid-area: h;
+            }
+
         .modal__resume {
             display: grid;
             justify-content: center;
@@ -341,42 +410,81 @@ body, html {
         color: black;
     }
 
-    .modal__award-header {
-        position: relative;
-        grid-area: a;
+    
+
+    .modal__bio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr .1fr .1fr .1fr .1fr 1fr .1fr 0fr;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f" 
+        "g"
+        "h";
+        justify-content: center;
+        background-color:rgb(238, 237, 237);
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 10);
+        text-align: center;
+        color: black;
+        height: 70vh;
     }
 
-    .modal__award-title {
-        font-size: large;
-        padding-top: 2em;
-    }
+        .modal__bio-image {
+            grid-area: a;
+            display: none;
+        }
 
-    .modal__award-link {
-        grid-area: b;
-    }
+        .modal__bio-header {
+            position: relative;
+            grid-area: b;
+        }
 
-    .modal__award-button {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        text-decoration: none;
-        font-size: x-large;
-        border: none;
-    }
+        .modal__bio-name {
+            grid-area: b;
+            font-size: medium;
+            padding: .5em;
+        }
 
-    .modal__award-page-1 {
-        grid-area: c;
-        height: auto;
-        width: 60vw;
-        padding:1rem;
-    }
+        .modal__bio-button {
+            position: absolute;
+            top: .25rem;
+            right: .25rem;
+            text-decoration: none;
+            font-size: x-large;
+            border: none;
+        }
 
-    .modal__award-page-2 {
-        grid-area: d;
-        height: auto;
-        width: 60vw;
-        padding:1rem;
-    }
+        .modal__bio-origin {
+            grid-area: c;
+        }
+
+        .modal__bio-country {
+            grid-area: d;
+        }
+
+        .modal__bio-bio {
+            grid-area: e;
+            height: 1%;
+        }
+
+        .modal__bio-text {
+            grid-area: f;
+            font-size: x-small;
+        }
+
+        .modal__bio-contact {
+            grid-area: g;
+        }
+
+        .modal__bio-link {
+            grid-area: h;
+            font-size: x-small;
+        }
 
     .footer {
         font-size: small;
