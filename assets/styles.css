@@ -594,6 +594,14 @@ body, html {
             width: 50vw;
         }
 
+    .carousel__button--left {
+        left: 1%;
+    }
+
+    .carousel__button--right {
+        right: 1%;
+    }
+
     .footer {
         font-size: small;
     }
