@@ -367,14 +367,14 @@ body, html {
     .modal__award-page-1 {
         grid-area: c;
         height: auto;
-        width: 75vw;
+        width: 60vw;
         padding:1rem;
     }
 
     .modal__award-page-2 {
         grid-area: d;
         height: auto;
-        width: 75vw;
+        width: 60vw;
         padding:1rem;
     }
 
