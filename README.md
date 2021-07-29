@@ -13,7 +13,7 @@ I'm proud to say that I've coded it all from scratch and used no frameworks. It 
 * JavaScript
 
 # Screenshot
-![Portfolio(v2)](./assets/Portfolio(v2).gif)
+![Portfolio(v2)](Portfolio(v2)\assets\Portfolio(v2).gif)
 
 # Contact
 
