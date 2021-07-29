@@ -173,24 +173,72 @@ body, html {
             color: black;
         }
 
-        .modal__resume-header {
-            position: relative;
-        }
+            .modal__resume-header {
+                position: relative;
+            }
 
-        .modal__resume-image {
-            height: 75vh;
-            width: auto;
-            padding:2rem;
-        }
+            .modal__resume-image {
+                height: 75vh;
+                width: auto;
+                padding:2rem;
+            }
 
-        .modal__resume-button {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            text-decoration: none;
-            font-size: x-large;
-            border: none;
+            .modal__resume-button {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                text-decoration: none;
+                font-size: x-large;
+                border: none;
+            }
+
+        .modal__bag {
+            display: grid;
+            grid-template-columns: .5fr 1fr;
+            grid-template-rows: .4fr 1fr;
+            grid-template-areas: 
+            "a b"
+            "a c";
+            justify-content: center;
+            background-color:rgb(238, 237, 237);
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 10);
+            text-align: center;
+            color: black;
+            width: 70vw;
         }
+    
+            .modal__bag-image {
+                grid-area: a;
+                height: 70vh;
+                width: auto;
+                padding:1rem;
+            }
+
+            .modal__bag-header {
+                position: relative;
+                grid-area: b;
+                text-align: left;
+                padding: 2em;
+            }
+
+            .modal__bag-list {
+                grid-area: c;
+            }
+
+            .modal__bag-list ul {
+                list-style: none;
+                text-align: left;
+            }
+
+            .modal__bag-button {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                text-decoration: none;
+                font-size: x-large;
+                border: none;
+            }
 
         .modal__award {
             display: grid;
@@ -208,37 +256,37 @@ body, html {
             color: black;
         }
 
-        .modal__award-header {
-            position: relative;
-            grid-area: a;
-        }
+            .modal__award-header {
+                position: relative;
+                grid-area: a;
+            }
 
-        .modal__award-link {
-            grid-area: b;
-        }
+            .modal__award-link {
+                grid-area: b;
+            }
 
-        .modal__award-button {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            text-decoration: none;
-            font-size: x-large;
-            border: none;
-        }
+            .modal__award-button {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                text-decoration: none;
+                font-size: x-large;
+                border: none;
+            }
 
-        .modal__award-page-1 {
-            grid-area: c;
-            height: auto;
-            width: 30vw;
-            padding:1rem;
-        }
+            .modal__award-page-1 {
+                grid-area: c;
+                height: auto;
+                width: 30vw;
+                padding:1rem;
+            }
 
-        .modal__award-page-2 {
-            grid-area: d;
-            height: auto;
-            width: 30vw;
-            padding:1rem;
-        }
+            .modal__award-page-2 {
+                grid-area: d;
+                height: auto;
+                width: 30vw;
+                padding:1rem;
+            }
 
         .bio-pic {
             height: auto;
@@ -393,25 +441,6 @@ body, html {
         padding:2rem;
     }
 
-    .modal__award {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: .2fr .1fr 2fr 2fr;
-        grid-template-areas: 
-        "a"
-        "b"
-        "c"
-        "d";
-        justify-content: center;
-        background-color:rgb(238, 237, 237);
-        border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 10);
-        text-align: center;
-        color: black;
-    }
-
-    
-
     .modal__bio {
         display: grid;
         grid-template-columns: 1fr;
@@ -484,6 +513,85 @@ body, html {
         .modal__bio-link {
             grid-area: h;
             font-size: x-small;
+        }
+    
+    .modal__bag {
+        display: grid;
+        grid-template-columns: 0fr 1fr;
+        grid-template-rows: .4fr 1fr;
+        grid-template-areas: 
+        "a b"
+        "a c";
+        justify-content: center;
+        background-color:rgb(238, 237, 237);
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 10);
+        text-align: center;
+        color: black;
+        width: 80vw;
+    }
+
+        .modal__bag-image {
+            grid-area: a;
+            height: 70vh;
+            width: auto;
+            padding:1rem;
+            display: none;
+        }
+
+        .modal__bag-header {
+            position: relative;
+            grid-area: b;
+            text-align: center;
+            padding: 2em;
+            font-size: xx-small;
+        }
+
+        .modal__bag-list {
+            grid-area: c;
+        }
+
+        .modal__bag-list ul {
+            list-style: none;
+            text-align: center;
+            font-size: small;
+        }
+
+    .modal__award {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .2fr .1fr 1fr 1fr;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d";
+        justify-content: center;
+        background-color:rgb(238, 237, 237);
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 10);
+        text-align: center;
+        color: black;
+        width: 80vw;
+    }
+
+        .modal__award-header {
+            position: relative;
+            grid-area: a;
+            font-size: xx-small;
+            padding: 2em;
+        }
+
+        .modal__award-page-1 {
+            grid-area: c;
+            height: auto;
+            width: 50vw;
+        }
+
+        .modal__award-page-2 {
+            grid-area: d;
+            height: auto;
+            width: 50vw;
         }
 
     .footer {
