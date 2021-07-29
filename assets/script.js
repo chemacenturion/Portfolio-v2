@@ -1,17 +1,17 @@
 const openBio = document.getElementById('open1');
 const openResume = document.getElementById('open2');
 const openBag = document.getElementById('open3');
-const openWrite = document.getElementById('open4');
+const openAward = document.getElementById('open4');
 
 const modalContainer = document.getElementById('bio-modal');
 const resumeContainer = document.getElementById('resume');
 const bagContainer = document.getElementById('bag');
-const writeContainer = document.getElementById('writeUp');
+const awardContainer = document.getElementById('award');
 
 const closeBio = document.getElementById('close1');
 const closeResume = document.getElementById('close2');
 const closeBag = document.getElementById('close3');
-const closeWrite = document.getElementById('close4');
+const closeAward = document.getElementById('close4');
 
 openBio.addEventListener('click', () => {
     modalContainer.classList.add('show');
@@ -37,12 +37,12 @@ closeBag.addEventListener('click', () => {
     bagContainer.classList.remove('show');
 });
 
-openWrite.addEventListener('click', () => {
-    writeContainer.classList.add('show');
+openAward.addEventListener('click', () => {
+    awardContainer.classList.add('show');
 });
 
-closeWrite.addEventListener('click', () => {
-    writeContainer.classList.remove('show');
+closeAward.addEventListener('click', () => {
+    awardContainer.classList.remove('show');
 });
 
 // insert script.js for carousel here

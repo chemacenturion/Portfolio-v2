@@ -111,6 +111,7 @@ body, html {
         .modal__resume-image {
             height: 75vh;
             width: auto;
+            padding:2rem;
         }
 
         .modal__resume-button {
@@ -120,6 +121,54 @@ body, html {
             text-decoration: none;
             font-size: x-large;
             border: none;
+        }
+
+        .modal__award {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: .2fr .1fr 3fr;
+            grid-template-areas: 
+            "a a"
+            "b b"
+            "c d";
+            justify-content: center;
+            background-color:rgb(238, 237, 237);
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 10);
+            text-align: center;
+            color: black;
+        }
+
+        .modal__award-header {
+            position: relative;
+            grid-area: a;
+        }
+
+        .modal__award-link {
+            grid-area: b;
+        }
+
+        .modal__award-button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            text-decoration: none;
+            font-size: x-large;
+            border: none;
+        }
+
+        .modal__award-page-1 {
+            grid-area: c;
+            height: auto;
+            width: 30vw;
+            padding:1rem;
+        }
+
+        .modal__award-page-2 {
+            grid-area: d;
+            height: auto;
+            width: 30vw;
+            padding:1rem;
         }
 
         .bio-pic {
@@ -267,6 +316,66 @@ body, html {
         height: 1em;
         width: 20em;
         margin-top: 4%;
+    }
+
+    .modal__resume-image {
+        height: 50vh;
+        width: auto;
+        padding:2rem;
+    }
+
+    .modal__award {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .2fr .1fr 2fr 2fr;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d";
+        justify-content: center;
+        background-color:rgb(238, 237, 237);
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 10);
+        text-align: center;
+        color: black;
+    }
+
+    .modal__award-header {
+        position: relative;
+        grid-area: a;
+    }
+
+    .modal__award-title {
+        font-size: large;
+        padding-top: 2em;
+    }
+
+    .modal__award-link {
+        grid-area: b;
+    }
+
+    .modal__award-button {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        text-decoration: none;
+        font-size: x-large;
+        border: none;
+    }
+
+    .modal__award-page-1 {
+        grid-area: c;
+        height: auto;
+        width: 75vw;
+        padding:1rem;
+    }
+
+    .modal__award-page-2 {
+        grid-area: d;
+        height: auto;
+        width: 75vw;
+        padding:1rem;
     }
 
     .footer {
