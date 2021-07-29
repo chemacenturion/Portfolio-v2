@@ -13,7 +13,7 @@ I'm proud to say that I've coded it all from scratch and used no frameworks. It 
 * JavaScript
 
 # Screenshot
-![Portfolio(v2)](assets\images\Portfolio-v2.gif)
+![Portfolio(v2)](https://github.com/chemacenturion/Portfolio-v2/blob/main/assets/images/Portfolio-v2.gif?raw=true)
 
 # Contact
 
