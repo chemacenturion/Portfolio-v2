@@ -89,61 +89,117 @@ body, html {
         height: 100vh;
         width: 100vw;
         transition: opacity 0.3s ease;
+        z-index: 99;
     }
 
-    .modal {
-        background-color:rgb(238, 237, 237);
-        border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 10);
-        padding: 30px 50px;
-        height: 85%;
-        width: 75%;
-        max-width: 100%;
-        text-align: center;
-        color: black;
-    }
+        .modal {
+            background-color:rgb(238, 237, 237);
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 10);
+            padding: 30px 50px;
+            height: 85%;
+            width: 75%;
+            max-width: 100%;
+            text-align: center;
+            color: black;
+        }
 
-    .bio-pic {
-        height: auto;
-        width: 25%;
-        border-radius: 3px;
-        padding: 25px;
-        border-right: solid rgb(199, 199, 199) 1px;
-    }
+        .bio-pic {
+            height: auto;
+            width: 25%;
+            max-width: 100%;
+            border-radius: 3px;
+            padding: 25px;
+            border-right: solid rgb(199, 199, 199) 1px;
+        }
 
-    #close1,
-    #close3 {
-        margin-top: 100px;
-    }
+        #close1,
+        #close3 {
+            margin-top: 100px;
+        }
 
-    #close2 {
-        margin-top: 20px;
-    }
-    
-    .modal_container.show {
-        pointer-events: auto;
-        opacity: 1;
-    }
+        #close2 {
+            margin-top: 20px;
+        }
+        
+        .modal_container.show {
+            pointer-events: auto;
+            opacity: 1;
+        }
 
-    .resume-display {
-        width:75%;
-        height: 75%;
-    }
+        .resume-display {
+            width:75%;
+            height: 75%;
+        }
 
-    .witb-pic {
-        padding: 50px;
-        border-right: solid rgb(199, 199, 199) 1px;
-    }
+        .witb-pic {
+            padding: 50px;
+            border-right: solid rgb(199, 199, 199) 1px;
+        }
 
-    .club-list ul {
-        list-style-type: none;
-        text-align: left;
-    }
+        .club-list ul {
+            list-style-type: none;
+            text-align: left;
+        }
 
 .grid-item-2 {
     color: white;
     grid-area: repo;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
 }
+
+    .carousel {
+        position: absolute;
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
+
+    .carousel__track-container {
+        position: relative;
+    }
+
+    .carousel__track {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        height: 100%;
+        transition: transform 250ms ease-in;
+    }
+
+    .carousel__slide {
+        position: absolute;
+        top:0;
+        bottom:0;
+        width:100%;
+    }
+
+    .carousel__slide img {
+        width: 72%;
+        margin-top: 10px;
+    }
+
+    .carousel__button {
+        position: absolute;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .carousel__button--left {
+        left: 10%;
+    }
+
+    .carousel__button--right {
+        right: 10%;
+    }
+
+    .carousel__button img {
+        width: 25px;
+    }
 
 .footer {
     background: linear-gradient( rgb(0, 0, 0), rgb(100, 100, 100));
