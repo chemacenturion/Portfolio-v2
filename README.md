@@ -13,11 +13,11 @@ I'm proud to say that I've coded it all from scratch and used no frameworks. It 
 * JavaScript
 
 # Screenshot
-![Portfolio-Version-2.0](/assets/images/Portfolio (v2).gif)
+![Portfolio(v2)](./assets/Portfolio(v2).gif)
 
 # Contact
 
-![José María Centurión](centurion.philadelphia@gmail.com)
+José María Centurión( centurion.philadelphia@gmail.com )
 
 # License
 
