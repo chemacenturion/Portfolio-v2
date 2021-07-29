@@ -201,6 +201,10 @@ body, html {
         width: 25px;
     }
 
+    .is-hidden { 
+        display: none;
+    }
+
 .footer {
     background: linear-gradient( rgb(0, 0, 0), rgb(100, 100, 100));
     grid-area: footer;
@@ -229,7 +233,7 @@ body, html {
         display: grid;
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 4fr .5fr;
+        grid-template-rows: 1fr 2fr 3fr .5fr;
         grid-template-areas: 
         "header"
         "bio"
