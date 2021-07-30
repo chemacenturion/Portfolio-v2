@@ -348,8 +348,8 @@ body, html {
     }
 
     .carousel__slide img {
-        width: 72%;
-        margin-top: 10px;
+        width: 60%;
+        margin-top: 40px;
     }
 
     .carousel__button {
@@ -361,6 +361,7 @@ body, html {
 
     .carousel__button--left {
         left: 10%;
+        top: 22px;
     }
 
     .carousel__button--right {
@@ -368,11 +369,15 @@ body, html {
     }
 
     .carousel__button img {
-        width: 25px;
+        width: 40px;
     }
 
     .is-hidden { 
         display: none;
+    }
+
+    .repo-list a {
+        color: white;
     }
 
 .footer {
@@ -600,6 +605,11 @@ body, html {
 
     .carousel__button--right {
         right: 1%;
+    }
+
+    .repo-list a {
+        color: white;
+        font-size: x-small;
     }
 
     .footer {
